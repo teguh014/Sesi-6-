@@ -30,8 +30,11 @@ CREATE TABLE IF NOT EXISTS orders (
 );
 
 -- CREATE 
-INSERT INTO products (nama_produk, harga, deskripsi, stok)
-VALUES ('Laptop ASUS', 8000000, 'Laptop ASUS Core i5', 10);
+INSERT INTO products (nama_produk, harga, deskripsi, stok) VALUES
+('Laptop ASUS', 8000000, 'Laptop ASUS Core i5', 10),
+('Laptop Lenovo', 6500000, 'Laptop Lenovo Ryzen 5', 15),
+('Smartphone Samsung', 5000000, 'Samsung Galaxy A52', 20),
+('Headset Logitech', 800000, 'Headset Gaming Logitech', 30);
 
 -- READ 
 SELECT * FROM products;
@@ -49,3 +52,4 @@ DELETE FROM products WHERE id = 1;
 
 -- cek hasil delete
 SELECT * FROM products;
+
